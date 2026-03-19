@@ -13,9 +13,9 @@ const config: Config = {
           purple:  "#5C2977",
           purpleLight: "#7B3FA0",
           purpleDark: "#3d1a50",
-          gold:    "#D5A940",
-          goldLight: "#e8c06a",
-          goldDark: "#b88d2e",
+          gold:    "#F2C135",
+          goldLight: "#F8D970",
+          goldDark: "#d4a020",
           ink:     "#0a0510",
           inkLight:"#150a25",
           inkMid:  "#1e1030",
@@ -30,7 +30,7 @@ const config: Config = {
         "purple-glow":
           "radial-gradient(ellipse at center, #5C2977 0%, transparent 70%)",
         "gold-gradient":
-          "linear-gradient(135deg, #D5A940 0%, #e8c06a 100%)",
+          "linear-gradient(135deg, #F2C135 0%, #F8D970 100%)",
         "card-gradient":
           "linear-gradient(135deg, #1e1030 0%, #150a25 100%)",
       },

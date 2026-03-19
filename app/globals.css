@@ -7,7 +7,7 @@
 @layer base {
   :root {
     --brand-purple: #5c2977;
-    --brand-gold: #d5a940;
+    --brand-gold: #f2c135;
     --brand-ink: #0a0510;
   }
 
@@ -102,6 +102,7 @@
 
   .text-gradient-gold {
     @apply bg-gradient-to-r from-brand-gold to-brand-goldLight bg-clip-text text-transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.85));
   }
 
   .text-gradient-purple {
@@ -124,11 +125,11 @@
 
   /* --- Glow effects --- */
   .glow-purple {
-    box-shadow: 0 0 60px rgba(92, 41, 119, 0.3);
+    box-shadow: 0 0 30px rgba(92, 41, 119, 0.35);
   }
 
   .glow-gold {
-    box-shadow: 0 0 40px rgba(213, 169, 64, 0.2);
+    box-shadow: 0 0 16px rgba(242, 193, 53, 0.35);
   }
 }
 
@@ -156,7 +157,7 @@
 
 /* Feature icon glow */
 .icon-glow {
-  filter: drop-shadow(0 0 8px rgba(213, 169, 64, 0.5));
+  filter: drop-shadow(0 0 6px rgba(242, 193, 53, 0.6));
 }
 
 /*

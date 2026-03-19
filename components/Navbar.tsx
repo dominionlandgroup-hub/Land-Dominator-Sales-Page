@@ -6,7 +6,6 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const navLinks = [
   { label: "Product", href: "/dashboard-preview" },
-  { label: "Case Studies", href: "/case-studies" },
   { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
@@ -45,8 +44,8 @@ export default function Navbar() {
               >
                 <path
                   d="M12 2L14.5 9H22L16 13.5L18.5 20.5L12 16L5.5 20.5L8 13.5L2 9H9.5L12 2Z"
-                  fill="#D5A940"
-                  stroke="#D5A940"
+                  fill="#F2C135"
+                  stroke="#F2C135"
                   strokeWidth="0.5"
                 />
               </svg>

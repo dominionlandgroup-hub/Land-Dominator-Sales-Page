@@ -51,7 +51,7 @@ const features = [
   {
     icon: Calculator,
     title: "Bulk Offer Calculator",
-    desc: "Generate 40%, 50%, and 60% offer tiers for every parcel in your target list at once — ready to feed into your direct mail campaign.",
+    desc: "Generate 60%, 65%, and 70% offer tiers for every parcel in your target list at once — ready to feed into your direct mail campaign.",
     tag: "Core",
   },
   {
@@ -118,7 +118,7 @@ const steps = [
   {
     number: "03",
     title: "Price Every Parcel Instantly",
-    desc: "LandIQ calculates median $/acre by acreage band for each matched parcel and generates 40%, 50%, and 60% offer tiers across your entire list — in bulk.",
+    desc: "LandIQ calculates median $/acre by acreage band for each matched parcel and generates 60%, 65%, and 70% offer tiers across your entire list — in bulk.",
     detail: "No spreadsheet formulas. No manual comp lookups. Every parcel priced consistently.",
   },
   {
@@ -156,7 +156,7 @@ const differentiators = [
   "Built for the Land Portal workflow — not retrofitted from residential tools",
   "Target-to-Comp Matching prices your entire parcel list automatically",
   "Proprietary acreage band logic accounts for size-based value shifts",
-  "Bulk offer calculator: 40/50/60% tiers across hundreds of parcels at once",
+  "Bulk offer calculator: 60/65/70% tiers across hundreds of parcels at once",
   "One-click mailing list export — from analysis to mail campaign same day",
   "Designed for deal velocity, not appraisals or academic analysis",
 ];
@@ -351,7 +351,7 @@ export default function HomePage() {
                               className="w-full rounded-t"
                               style={{
                                 height: `${b.h * 0.6}px`,
-                                background: i === 0 ? "#d5a940" : `rgba(92,41,119,${0.3 + (8-i)*0.07})`,
+                                background: i === 0 ? "#f2c135" : `rgba(92,41,119,${0.3 + (8-i)*0.07})`,
                               }}
                             />
                             <span className="text-[7px] text-white/30 rotate-0">{b.zip.slice(-3)}</span>
@@ -547,7 +547,7 @@ export default function HomePage() {
                 Upload your Land Portal comp export. LandIQ filters out residential
                 noise, builds your ZIP code intelligence dashboard, matches every
                 target parcel to relevant comps by acreage band, calculates estimated
-                retail value, and generates 40/50/60% investor offer tiers — across
+                retail value, and generates 60/65/70% investor offer tiers — across
                 your entire list at once.
               </p>
               <ul className="space-y-3 mb-8">
@@ -555,7 +555,7 @@ export default function HomePage() {
                   "Ingests Land Portal comp exports — filters residential automatically",
                   "ZIP Intelligence Dashboard: velocity, median $/acre, price bands",
                   "Acreage band matching: each parcel priced within its size tier",
-                  "Investor Offer Engine: 40/50/60% tiers calculated per parcel",
+                  "Investor Offer Engine: 60/65/70% tiers calculated per parcel",
                   "One-click mailing list export — mail-ready the same day",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2.5 text-sm text-gray-700">
@@ -591,9 +591,9 @@ export default function HomePage() {
                     Offer Tiers — Applied to Every Parcel
                   </p>
                   {[
-                    { label: "40% Conservative", value: "$23,552", width: "40%", color: "bg-red-500/70", sub: "Low-risk entry offer" },
-                    { label: "50% Standard", value: "$29,440", width: "50%", color: "bg-brand-gold", sub: "Most common winning offer" },
-                    { label: "60% Aggressive", value: "$35,328", width: "60%", color: "bg-green-400/70", sub: "Competitive markets" },
+                    { label: "60% Conservative", value: "$35,328", width: "60%", color: "bg-brand-gold/60", sub: "Conservative investor offer" },
+                    { label: "65% Standard", value: "$38,272", width: "65%", color: "bg-brand-gold", sub: "Most common winning offer" },
+                    { label: "70% Aggressive", value: "$41,216", width: "70%", color: "bg-green-400/70", sub: "Competitive markets" },
                   ].map((tier) => (
                     <div key={tier.label}>
                       <div className="flex items-center gap-3 mb-1">
