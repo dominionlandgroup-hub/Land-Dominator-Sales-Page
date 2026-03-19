@@ -663,6 +663,90 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ═══════════════════════════ PRODUCT SCREENSHOTS ═══════════════════════════ */}
+      <section className="section-light py-20 border-b border-gray-100">
+        <div className="container-xl">
+          <div className="mx-auto max-w-3xl text-center mb-12">
+            <span className="badge-purple mb-4">The Platform</span>
+            <h2 className="heading-section text-gray-900 mt-4">
+              See LandIQ{" "}
+              <span className="text-brand-purple">In Action</span>
+            </h2>
+            <p className="mt-4 text-lg text-gray-500">
+              From raw Land Portal export to priced mailing list — here&apos;s what the platform looks like.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            {/* Screenshot 1: ZIP Dashboard */}
+            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+              <img
+                src="/screenshots/dashboard.png"
+                alt="ZIP Code Intelligence Dashboard"
+                className="w-full block"
+              />
+              <div className="bg-white px-5 py-4 border-t border-gray-100">
+                <p className="font-bold text-gray-900 text-sm">ZIP Code Intelligence Dashboard</p>
+                <p className="text-xs text-gray-500 mt-1">
+                  See market velocity, median $/acre, and sales volume across every ZIP in your target county.
+                </p>
+              </div>
+            </div>
+
+            {/* Screenshot 2: Mailing List */}
+            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+              <img
+                src="/screenshots/mailing-list.png"
+                alt="Mailing List Export"
+                className="w-full block"
+              />
+              <div className="bg-white px-5 py-4 border-t border-gray-100">
+                <p className="font-bold text-gray-900 text-sm">Mailing List — Ready to Export</p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Deduplicated, priced, and mail-ready. Download the full list or filter to High Confidence only.
+                </p>
+              </div>
+            </div>
+
+            {/* Screenshot 3: Match Targets */}
+            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+              <img
+                src="/screenshots/match-targets.png"
+                alt="Run Matching Engine — Matched Parcels"
+                className="w-full block"
+              />
+              <div className="bg-white px-5 py-4 border-t border-gray-100">
+                <p className="font-bold text-gray-900 text-sm">Target-to-Comp Matching Engine</p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Every parcel scored, matched to comps, and priced with Low / Mid offer tiers — across thousands of targets at once.
+                </p>
+              </div>
+            </div>
+
+            {/* Screenshot 4: ZIP Performance Table */}
+            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+              <img
+                src="/screenshots/zip-performance.png"
+                alt="ZIP Performance Table"
+                className="w-full block"
+              />
+              <div className="bg-white px-5 py-4 border-t border-gray-100">
+                <p className="font-bold text-gray-900 text-sm">ZIP Performance Table</p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Full breakout of every ZIP — comp counts, median $/acre, price band distribution, and max sale price.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link href="/dashboard-preview" className="btn-dark">
+              Full Platform Walkthrough →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════════════════════ HOW IT WORKS ═══════════════════════════ */}
       <section id="how-it-works" className="section-muted py-24">
         <div className="container-xl">
