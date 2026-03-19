@@ -10,23 +10,23 @@ export const metadata = {
 const values = [
   {
     icon: Target,
-    title: "Purpose-Built",
-    desc: "Every feature in LandIQ was designed around the way land investors actually work — not adapted from a residential platform.",
+    title: "Land Only",
+    desc: "No residential features. No filler. Every decision we make is filtered through one question: does this help a land investor move faster?",
   },
   {
     icon: TrendingUp,
-    title: "Data-Driven",
-    desc: "We believe investors who make decisions based on real comp data consistently outperform those who rely on gut instinct alone.",
+    title: "Comps Over Gut",
+    desc: "Gut instinct loses deals. Accurate $/acre by acreage band wins them. We built the math so you don't have to.",
   },
   {
     icon: Users,
-    title: "Investor-First",
-    desc: "We build for serious operators — land flippers, infill buyers, builder lot sourcers — not casual browsers or hobbyists.",
+    title: "Operators Only",
+    desc: "Built for land flippers, infill buyers, and builder lot sourcers running real campaigns — not hobbyists browsing maps.",
   },
   {
     icon: Star,
-    title: "Continuously Improving",
-    desc: "Beta users get direct input into the roadmap. The product grows with your needs, not on a vendor's arbitrary schedule.",
+    title: "You Shape the Roadmap",
+    desc: "Beta users tell us what slows them down. We build that next. No vendor agenda, no feature bloat.",
   },
 ];
 
@@ -43,10 +43,9 @@ export default function AboutPage() {
               <span className="text-gradient-gold">for Land Investors</span>
             </h1>
             <p className="text-xl text-white/60 leading-relaxed">
-              LandIQ was created out of frustration. We were already using Land
-              Portal to pull comps — but turning those exports into priced mailing
-              lists still required hours of manual spreadsheet work. We built
-              LandIQ to eliminate that bottleneck entirely.
+              We were already using Land Portal. The data was there. But pricing
+              200 parcels still took three days of spreadsheet work. We built the
+              tool that should have existed.
             </p>
           </div>
         </div>
@@ -59,34 +58,30 @@ export default function AboutPage() {
             <div>
               <span className="badge-purple mb-4">Our Story</span>
               <h2 className="heading-sub text-gray-900 mt-4 mb-6">
-                The Problem We Kept Running Into
+                The Same Problem, Every Campaign
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  We were already using Land Portal to export sold land comps for
-                  every county we worked in. The data was there — but turning it
-                  into priced offers was entirely manual. Filter out residential
-                  sales. Calculate $/acre for each row. Sort comps by acreage band.
-                  Build offer formulas. Repeat for every parcel on the target list.
+                  We pulled Land Portal comps for every county we worked.
+                  The data existed. Making it usable didn&apos;t happen automatically.
+                  Strip residential. Calculate $/acre per row. Sort by acreage band.
+                  Build offer formulas. Do it again for every parcel on the list.
                 </p>
                 <p>
-                  On a 200-parcel campaign, that process took two to three days.
-                  We were spending more time cleaning data than actually analyzing
-                  deals — and making offers based on gut instinct more often than
-                  we'd like to admit.
+                  200-parcel campaign: two to three days of cleanup before a single
+                  offer went out. We were pricing on feel more than data.
+                  That&apos;s not a system — it&apos;s a liability.
                 </p>
                 <p>
-                  Every real estate tool we looked at was built for residential
-                  agents. Land pricing is different: price-per-acre varies sharply
-                  by size band, location, and buyer type. No existing platform
-                  understood that. So we built one that did.
+                  Every platform we tried was residential. Land pricing doesn&apos;t
+                  work that way. $/acre moves hard at 1, 5, 10, and 25 acres.
+                  No tool accounted for that. So we built one that does.
                 </p>
                 <p>
-                  LandIQ originated as an internal workflow tool used by{" "}
-                  <strong className="text-gray-900">We Are Land Specialists</strong>,
-                  a real estate investment company focused exclusively on vacant land
-                  acquisitions. The platform is now available to the broader land
-                  investing community.
+                  LandIQ started as an internal tool at{" "}
+                  <strong className="text-gray-900">We Are Land Specialists</strong>.
+                  It solved our problem first. Now it&apos;s available to any land
+                  investor running the same workflow.
                 </p>
               </div>
             </div>
@@ -134,7 +129,7 @@ export default function AboutPage() {
       <section className="section-muted py-20">
         <div className="container-xl">
           <div className="mx-auto max-w-2xl text-center mb-12">
-            <h2 className="heading-sub text-gray-900 mb-4">What We Stand For</h2>
+            <h2 className="heading-sub text-gray-900 mb-4">How We Build</h2>
           </div>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((v) => (
@@ -154,11 +149,11 @@ export default function AboutPage() {
       <section className="section-dark py-20">
         <div className="container-xl text-center">
           <h2 className="heading-sub text-white mb-4">
-            Ready to Price Land with Confidence?
+            Stop Pricing by Feel
           </h2>
           <p className="mx-auto mb-8 max-w-lg text-white/50">
-            Join the beta and go from Land Portal export to priced mailing list
-            in your first session. Built by land investors, for land investors.
+            Land Portal export to priced mailing list in your first session.
+            No spreadsheets. No guesswork. Just offers.
           </p>
           <Link href="/#waitlist" className="btn-primary px-10 py-4 text-base">
             Join the Beta Waitlist <ArrowRight size={18} />
