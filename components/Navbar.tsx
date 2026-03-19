@@ -44,8 +44,8 @@ export default function Navbar() {
               >
                 <path
                   d="M12 2L14.5 9H22L16 13.5L18.5 20.5L12 16L5.5 20.5L8 13.5L2 9H9.5L12 2Z"
-                  fill="#F2C135"
-                  stroke="#F2C135"
+                  fill="#FFD700"
+                  stroke="#FFD700"
                   strokeWidth="0.5"
                 />
               </svg>

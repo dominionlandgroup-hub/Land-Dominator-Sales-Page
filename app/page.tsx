@@ -351,7 +351,7 @@ export default function HomePage() {
                               className="w-full rounded-t"
                               style={{
                                 height: `${b.h * 0.6}px`,
-                                background: i === 0 ? "#f2c135" : `rgba(92,41,119,${0.3 + (8-i)*0.07})`,
+                                background: i === 0 ? "#FFD700" : `rgba(92,41,119,${0.3 + (8-i)*0.07})`,
                               }}
                             />
                             <span className="text-[7px] text-white/30 rotate-0">{b.zip.slice(-3)}</span>
