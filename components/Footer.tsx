@@ -6,7 +6,6 @@ const footerLinks = {
     { label: "Features", href: "/#features" },
     { label: "Pricing", href: "/pricing" },
     { label: "Dashboard Preview", href: "/dashboard-preview" },
-    { label: "Case Studies", href: "/case-studies" },
   ],
   Company: [
     { label: "About", href: "/about" },
@@ -38,8 +37,8 @@ export default function Footer() {
                 >
                   <path
                     d="M12 2L14.5 9H22L16 13.5L18.5 20.5L12 16L5.5 20.5L8 13.5L2 9H9.5L12 2Z"
-                    fill="#D5A940"
-                    stroke="#D5A940"
+                    fill="#A07520"
+                    stroke="#A07520"
                     strokeWidth="0.5"
                   />
                 </svg>

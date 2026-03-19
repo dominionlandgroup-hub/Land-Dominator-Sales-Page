@@ -38,6 +38,7 @@ export default function WaitlistForm({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
+  const [landPortalAgreed, setLandPortalAgreed] = useState(false);
 
   const roles = [
     "Land Investor / Flipper",
@@ -63,6 +64,7 @@ export default function WaitlistForm({
     if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
       return "Please enter a valid email address.";
     if (!form.role) return "Please select your role.";
+    if (!landPortalAgreed) return "You must have or be willing to get a Land Portal account.";
     return null;
   };
 
@@ -80,6 +82,12 @@ export default function WaitlistForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, type, submittedAt: new Date().toISOString() }),
       });
+
+      if (res.status === 409) {
+        const data = await res.json();
+        setError(data.error ?? "Beta spots are full. Check back soon.");
+        return;
+      }
 
       if (!res.ok) throw new Error("Submission failed");
 
@@ -199,6 +207,27 @@ export default function WaitlistForm({
         </div>
       )}
 
+      {/* Land Portal requirement */}
+      <label className="flex items-start gap-3 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={landPortalAgreed}
+          onChange={(e) => { setError(""); setLandPortalAgreed(e.target.checked); }}
+          className="mt-0.5 h-4 w-4 shrink-0 rounded border-gray-300 accent-brand-gold"
+        />
+        <span className={`text-xs leading-relaxed ${variant === "dark" ? "text-white/60" : "text-gray-600"}`}>
+          <span className="font-semibold">Requirement:</span> I have a Land Portal account, or I am able/willing to get one.{" "}
+          <a
+            href="https://www.landportal.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline opacity-70 hover:opacity-100"
+          >
+            Learn more
+          </a>
+        </span>
+      </label>
+
       {/* Error */}
       {error && (
         <p className="flex items-center gap-1.5 text-xs font-medium text-red-400">
@@ -226,7 +255,7 @@ export default function WaitlistForm({
       </button>
 
       <p className={`text-center text-xs ${variant === "dark" ? "text-white/30" : "text-gray-400"}`}>
-        No credit card required. Free beta access. Cancel anytime.
+        No credit card required. Free beta access. Limited to 20 spots.
       </p>
     </form>
   );

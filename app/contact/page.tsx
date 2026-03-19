@@ -41,10 +41,10 @@ export default function ContactPage() {
                   For general questions, partnership inquiries, and feedback.
                 </p>
                 <a
-                  href="mailto:hello@landiq.com"
+                  href="mailto:wearelandspecialist@gmail.com"
                   className="text-sm font-semibold text-brand-purple hover:underline"
                 >
-                  hello@landiq.com
+                  wearelandspecialist@gmail.com
                 </a>
               </div>
 

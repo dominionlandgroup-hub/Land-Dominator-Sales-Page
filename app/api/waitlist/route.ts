@@ -70,6 +70,15 @@ export async function POST(req: NextRequest) {
       (l) => l.email === lead.email && l.type === lead.type
     );
 
+    // Enforce 20-person cap on waitlist spots
+    const waitlistCount = leads.filter((l) => l.type === "waitlist").length;
+    if (!duplicate && lead.type === "waitlist" && waitlistCount >= 20) {
+      return NextResponse.json(
+        { error: "We've reached our beta capacity of 20 spots. Follow us for updates." },
+        { status: 409 }
+      );
+    }
+
     if (!duplicate) {
       leads.push(lead);
       writeLeads(leads);
