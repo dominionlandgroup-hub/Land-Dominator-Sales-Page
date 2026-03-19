@@ -158,13 +158,32 @@ export default function DashboardPreviewPage() {
             </p>
           </div>
 
-          {/* Screenshot: ZIP Performance Table */}
-          <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md mb-8">
-            <img
-              src="/screenshots/zip-performance.png"
-              alt="ZIP Performance Table — LandIQ"
-              className="w-full block"
-            />
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            {/* Screenshot: ZIP Performance Table */}
+            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+              <img
+                src="/screenshots/zip-performance.png"
+                alt="ZIP Performance Table — LandIQ"
+                className="w-full block"
+              />
+              <div className="bg-white px-5 py-3 border-t border-gray-100">
+                <p className="font-bold text-gray-900 text-sm">ZIP Performance Table</p>
+                <p className="text-xs text-gray-500 mt-0.5">Every ZIP ranked by sales volume with median $/acre and price band breakdowns.</p>
+              </div>
+            </div>
+
+            {/* Screenshot: Sold Comps Map */}
+            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+              <img
+                src="/screenshots/comps-map.png"
+                alt="Sold Comps Map — LandIQ"
+                className="w-full block"
+              />
+              <div className="bg-white px-5 py-3 border-t border-gray-100">
+                <p className="font-bold text-gray-900 text-sm">Sold Comps Map</p>
+                <p className="text-xs text-gray-500 mt-0.5">See exactly where 709 comp locations are clustered — color-coded by ZIP code on a live map.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

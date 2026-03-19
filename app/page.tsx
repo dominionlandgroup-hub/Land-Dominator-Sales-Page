@@ -723,17 +723,17 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Screenshot 4: ZIP Performance Table */}
+            {/* Screenshot 4: Sold Comps Map */}
             <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
               <img
-                src="/screenshots/zip-performance.png"
-                alt="ZIP Performance Table"
+                src="/screenshots/comps-map.png"
+                alt="Sold Comps Map"
                 className="w-full block"
               />
               <div className="bg-white px-5 py-4 border-t border-gray-100">
-                <p className="font-bold text-gray-900 text-sm">ZIP Performance Table</p>
+                <p className="font-bold text-gray-900 text-sm">Sold Comps Map</p>
                 <p className="text-xs text-gray-500 mt-1">
-                  Full breakout of every ZIP — comp counts, median $/acre, price band distribution, and max sale price.
+                  See where 709 sold comp locations are clustered — color-coded by ZIP on a live interactive map.
                 </p>
               </div>
             </div>
